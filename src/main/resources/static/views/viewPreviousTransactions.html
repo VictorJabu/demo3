@@ -1,0 +1,16 @@
+<a class="btn btn-primary" href="#/home" role="button">Back</a>
+<h2>View Previous Transactions</h2>
+<table class="table table-striped">
+    <tr>
+    <th>Transaction Type</th>
+    <th>Transaction Details</th>
+    <th>Amount</th>
+    <th></th>
+    </tr>
+    <tr ng-repeat="tb in transactionalBalance">
+        <td>{{tb.transactionType}}</td>
+        <td>{{tb.transactionDetails}}</td>
+        <td>{{tb.amount}}</td>
+    </tr>
+
+</table>
